@@ -7,8 +7,12 @@
   
 let Time = 3;
   
+document.getElementById("counter").innerHTML = "Prepare to be rick rolled in " + Time + "s";  
+  
 var x = setInterval(function() {
 Time--;
+  
+document.getElementById("counter").innerHTML = "Prepare to be rick rolled in " + Time + "s";    
   
 if(Time == 0)
 {
@@ -17,7 +21,7 @@ if(Time == 0)
   
 },1000)
 
-document.getElementById("counter").innerHTML = "Prepare to be rick rolled in " + Time + "s";
+
 
 </script>  
 <body>
