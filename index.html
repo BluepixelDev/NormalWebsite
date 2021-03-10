@@ -1,19 +1,23 @@
 <html>
   
 <h1>RickRoll!</h1> 
-<p id="counter">Prepare to be rick rolled in 3</p>
+<p id="counter"></p>
   
 <script>
+  
 let Time = 3;
+  
 var x = setInterval(function() {
 Time--;
-
-document.getElementById("counter").innerHTML = "Prepare to be rick rolled in " + Time + "s";
+  
  if(Time == 0)
  {
   window.location.href = "https://youtu.be/bxqLsrlakK8";
  }
+  
 },1000)
+
+document.getElementById("counter").innerHTML = "Prepare to be rick rolled in " + Time + "s";
 
 </script>  
 <body>
